@@ -4,6 +4,7 @@ import { useMemo } from 'react';
 // material-ui
 import { CssBaseline, StyledEngineProvider } from '@mui/material';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { GlobalStyles } from "@mui/material";
 
 // project import
 import Palette from './palette';
@@ -53,6 +54,15 @@ export default function ThemeCustomization({ children }) {
         <StyledEngineProvider injectFirst>
             <ThemeProvider theme={themes}>
                 <CssBaseline />
+                <GlobalStyles
+                    styles={{
+                        body: { 
+                            backgroundImage: "linear-gradient(120deg, #a6c0fe 0%, #f68084 100%)"
+                            // background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);
+                            // backgroundImage: "linear-gradient( 95.2deg, rgba(173,252,234,1) 26.8%, rgba(192,229,246,1) 64% )"
+                        },
+                    }}
+                />
                 {children}
             </ThemeProvider>
         </StyledEngineProvider>

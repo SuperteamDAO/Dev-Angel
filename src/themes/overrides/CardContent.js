@@ -8,7 +8,8 @@ export default function CardContent() {
                     padding: 20,
                     '&:last-child': {
                         paddingBottom: 20
-                    }
+                    },
+                    borderColor: '#000'
                 }
             }
         }

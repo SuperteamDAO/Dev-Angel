@@ -17,6 +17,7 @@ import Tab from './Tab';
 import TableCell from './TableCell';
 import Tabs from './Tabs';
 import Typography from './Typography';
+import Paper from './Paper';
 
 // ==============================|| OVERRIDES - MAIN ||============================== //
 
@@ -34,6 +35,7 @@ export default function ComponentsOverrides(theme) {
         ListItemIcon(),
         OutlinedInput(theme),
         Tab(theme),
+        Paper(theme),
         TableCell(theme),
         Tabs(),
         Typography()
