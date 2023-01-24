@@ -5,7 +5,8 @@ export default function IconButton(theme) {
         MuiIconButton: {
             styleOverrides: {
                 root: {
-                    borderRadius: 4
+                    borderRadius: 4,
+                    backgroundColor: "rgba(0,0,0,0.2) !important"
                 },
                 sizeLarge: {
                     width: theme.spacing(5.5),

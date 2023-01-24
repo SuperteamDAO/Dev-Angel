@@ -18,6 +18,8 @@ import TableCell from './TableCell';
 import Tabs from './Tabs';
 import Typography from './Typography';
 import Paper from './Paper';
+import Alert from './Alert';
+import ListItemButton from './ListItemButton';
 
 // ==============================|| OVERRIDES - MAIN ||============================== //
 
@@ -37,6 +39,8 @@ export default function ComponentsOverrides(theme) {
         Tab(theme),
         Paper(theme),
         TableCell(theme),
+        Alert(theme),
+        ListItemButton(theme),
         Tabs(),
         Typography()
     );

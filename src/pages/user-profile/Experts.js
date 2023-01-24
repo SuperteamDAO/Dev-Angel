@@ -56,7 +56,7 @@ const Experts = () => {
                 if (userId === expert.userAddress) return <></>;
                 return (
                     <Grid item key={expert.id+index}>
-                        <Card sx={{ maxWidth: 300, minWidth: 300 }} style={{ flex: 1 }}>
+                        <Card className={"expert-card"} sx={{ maxWidth: 300, minWidth: 300 }} style={{ flex: 1 }}>
                             <CardHeader
                                 style={{ cursor: 'pointer' }}
                                 avatar={

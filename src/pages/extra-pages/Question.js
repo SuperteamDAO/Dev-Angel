@@ -145,7 +145,7 @@ const Question = () => {
     function getProposalCard(proposal, index) {
         return (
             <Grid item m={1} key={proposal.id + index}>
-                <Card style={{ minWidth: 300 }} key={proposal.id}>
+                <Card className={"expert-card"} style={{ minWidth: 300 }} key={proposal.id}>
                     <CardContent>
                         <Grid container spacing={2}>
                             <Grid item xs={0}>
@@ -164,7 +164,6 @@ const Question = () => {
                             <Button size="small" variant="outlined" onClick={() => startChat(question, proposal)}>
                                 Chat
                             </Button>
-                            <Button size="small"></Button>
                         </CardActions>
                     ) : (
                         <></>

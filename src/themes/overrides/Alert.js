@@ -1,14 +1,13 @@
 // ==============================|| OVERRIDES - CARD CONTENT ||============================== //
 
-export default function CardContent() {
+export default function Alert(theme) {
     return {
-        MuiCardContent: {
+        MuiAlert: {
             styleOverrides: {
                 root: {
-                    padding: 20,
-                    '&:last-child': {
-                        paddingBottom: 20
-                    },
+                    backgroundColor: 'none',
+                    background: 'none',
+                    backdropFilter: 'none'
                 }
             }
         }

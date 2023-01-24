@@ -13,10 +13,13 @@ export default function InputLabel(theme) {
                         lineHeight: '1em'
                     },
                     '&.MuiInputLabel-shrink': {
-                        background: theme.palette.background.paper,
+                        // background: theme.palette.background.paper,
                         padding: '0 8px',
                         marginLeft: -6,
                         lineHeight: '1.4375em'
+                    },
+                    '&.MuiInputLabel-root.Mui-focused': {
+                        color: '#fff',
                     }
                 }
             }
