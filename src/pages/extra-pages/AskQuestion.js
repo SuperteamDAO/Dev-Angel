@@ -97,14 +97,14 @@ const AskQuestion = () => {
                         }}
                     >
                         <div>
-                            <FormControl fullWidth="true" sx={{ m: 1 }} variant="outlined">
-                                <TextField label="Title" variant="outlined" focused value={title} onChange={(e) => setTitle(e.target.value)}/>
+                            <FormControl fullWidth="true" sx={{ m: 1 }}>
+                                <TextField label="Title" variant="filled" value={title} onChange={(e) => setTitle(e.target.value)}/>
                                 <FormHelperText id="title-helper-text">
                                     Title
                                 </FormHelperText>
                             </FormControl>
                             <FormControl fullWidth="true" sx={{ m: 1 }}>
-                                <TextField label="Description" variant="outlined" multiline rows={4} maxRows={4} value={desc} onChange={(e) => setDesc(e.target.value)}/>
+                                <TextField label="Description" variant="filled" multiline rows={4} maxRows={4} value={desc} onChange={(e) => setDesc(e.target.value)}/>
                                 <FormHelperText id="desc-helper-text">
                                     Description
                                 </FormHelperText>
@@ -112,7 +112,7 @@ const AskQuestion = () => {
                             <Grid container>
                                 <Grid item>
                                     <FormControl fullWidth="true" sx={{ m: 1 }}>
-                                        <TextField label="Bounty" variant="outlined" value={bounty} onChange={(e) => setBounty(e.target.value)}/>
+                                        <TextField label="Bounty" variant="filled" value={bounty} onChange={(e) => setBounty(e.target.value)}/>
                                         <FormHelperText id="title-helper-text">
                                             Bounty
                                         </FormHelperText>

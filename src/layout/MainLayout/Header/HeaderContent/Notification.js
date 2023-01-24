@@ -119,6 +119,7 @@ const Notification = () => {
                                     elevation={0}
                                     border={false}
                                     content={false}
+                                    className={"popupCard"}
                                     secondary={
                                         <IconButton size="small" onClick={handleToggle}>
                                             <CloseOutlined />

@@ -25,9 +25,9 @@ export default function Button(theme) {
                     backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #78e4ff, #ff48fa)',
                     backgroundOrigin: 'border-box',
                     backgroundClip: 'content-box, border-box',
-                    boxShadow: '2px 1000px 1px #fff inset',
                     '&:hover': {
                         border: 'solid 3px transparent',
+                        boxShadow: '2px 1000px 1px #fff inset',
                     }
                 },
                 contained: {
