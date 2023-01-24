@@ -24,7 +24,17 @@ export default function Paper(theme) {
                         '.MuiTypography-root': {
                             color: '#FFF',
                         }
+                    },
+                    '&.popupCard': {
+                        background: "rgba(0,0,0,0.75) !important",
+                        backdropFilter: "blur(100px) !important",
+                        "-webkit-backdrop-filter": "blur(100px) !important",
+                        color: "#FFF !important",
+                        '.MuiTypography-root': {
+                            color: '#FFF !important'
+                        }
                     }
+
                 }
             }
         }
