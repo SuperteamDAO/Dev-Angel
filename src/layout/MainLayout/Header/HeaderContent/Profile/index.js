@@ -164,10 +164,11 @@ const Profile = () => {
                 </Box>
             </Modal>
 
-            <Button
+            <ButtonBase
                 sx={{
-                    p: 0.1,
+                    p: 0.25,
                     bgcolor: open ? iconBackColorOpen : 'transparent',
+                    borderRadius: 1,
                     '&:hover': { bgcolor: 'secondary.lighter' }
                 }}
                 aria-label="open profile"
@@ -183,7 +184,7 @@ const Profile = () => {
                         <Typography variant="subtitle1">Disconnect Wallet</Typography>
                     )}
                 </Stack>
-            </Button>
+            </ButtonBase>
             <Popper
                 placement="bottom-end"
                 open={open}

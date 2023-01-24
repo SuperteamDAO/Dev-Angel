@@ -9,7 +9,7 @@ import Notification from './Notification';
 import MobileSection from './MobileSection';
 
 // ==============================|| HEADER - CONTENT ||============================== //
-// import { Chat } from '@pushprotocol/uiweb';
+import { Chat } from '@pushprotocol/uiweb';
 import Utils from 'utils/utils';
 
 const HeaderContent = () => {
@@ -17,16 +17,16 @@ const HeaderContent = () => {
 
     return (
         <>
-            {/* {!matchesXs && <Search />} */}
-            {/* {matchesXs && } */}
-            <Box sx={{ width: '100%', ml: 1 }} />
+            {!matchesXs && <Search />}
+            {matchesXs && <Box sx={{ width: '100%', ml: 1 }} />}
+
             <Notification />
-            {/* <Chat
+            <Chat
                 account={Utils.getMyAddress()} //user address
                 supportAddress="0x2C0a5B16b9C51ac466ee50baF95b6176Fb9f2b36" //support address
                 apiKey="jVPMCRom1B.iDRMswdehJG7NpHDiECIHwYMMv6k2KzkPJscFIDyW8TtSnk4blYnGa8DIkfuacU0"
                 env="staging"
-            /> */}
+            />
             {!matchesXs && <Profile />}
             {matchesXs && <MobileSection />}
         </>
