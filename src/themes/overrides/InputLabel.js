@@ -2,20 +2,10 @@
 
 export default function InputLabel(theme) {
     return {
-        MuiInputBase: {
-            styleOverrides: {
-                root: {
-                    color: theme.palette.grey[0],
-                    outline: "#FFF"
-                },
-            }
-        },
         MuiInputLabel: {
             styleOverrides: {
                 root: {
-                    color: theme.palette.grey[600],
-                    outline: "#FFF"
-
+                    color: theme.palette.grey[600]
                 },
                 outlined: {
                     lineHeight: '0.8em',
@@ -29,7 +19,7 @@ export default function InputLabel(theme) {
                         lineHeight: '1.4375em'
                     },
                     '&.MuiInputLabel-root.Mui-focused': {
-                        color: '#FFF',
+                        color: '#fff',
                     }
                 }
             }
