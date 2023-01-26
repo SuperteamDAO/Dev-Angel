@@ -32,12 +32,12 @@ const HeaderContent = () => {
             </WalletContextProvider>
             
             
-            <Chat
+            {/* <Chat
                 account={Utils.getMyAddress()} //user address
                 supportAddress="0x2C0a5B16b9C51ac466ee50baF95b6176Fb9f2b36" //support address
                 apiKey="jVPMCRom1B.iDRMswdehJG7NpHDiECIHwYMMv6k2KzkPJscFIDyW8TtSnk4blYnGa8DIkfuacU0"
                 env="staging"
-            />
+            /> */}
             {!matchesXs && <Profile />}
             {matchesXs && <MobileSection />}
         </>
