@@ -61,6 +61,11 @@ export default function ThemeCustomization({ children }) {
                             // background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);
                             // backgroundImage: "linear-gradient( 95.2deg, rgba(173,252,234,1) 26.8%, rgba(192,229,246,1) 64% )"
                         },
+                        '.wallet-adapter-button': {
+                            width: "180px",
+                            height: "38px",
+                            marginLeft: "10px"
+                        }
                     }}
                 />
                 {children}
