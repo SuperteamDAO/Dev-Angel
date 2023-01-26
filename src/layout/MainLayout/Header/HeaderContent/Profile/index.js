@@ -164,7 +164,7 @@ const Profile = () => {
                 </Box>
             </Modal>
 
-            <ButtonBase
+            {/* <ButtonBase
                 sx={{
                     p: 0.25,
                     bgcolor: open ? iconBackColorOpen : 'transparent',
@@ -184,7 +184,7 @@ const Profile = () => {
                         <Typography variant="subtitle1">Disconnect Wallet</Typography>
                     )}
                 </Stack>
-            </ButtonBase>
+            </ButtonBase> */}
             <Popper
                 placement="bottom-end"
                 open={open}

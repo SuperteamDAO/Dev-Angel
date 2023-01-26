@@ -20,7 +20,7 @@ const HeaderContent = () => {
     const { connection } = useConnection();
     const { publicKey, sendTransaction } = useWallet();
 
-    
+    console.log("Public key is "+publicKey);
     return (
         <>
             {!matchesXs && <Search />}
