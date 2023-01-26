@@ -20,6 +20,7 @@ const HeaderContent = () => {
     const { connection } = useConnection();
     const { publicKey, sendTransaction } = useWallet();
 
+    
     return (
         <>
             {!matchesXs && <Search />}

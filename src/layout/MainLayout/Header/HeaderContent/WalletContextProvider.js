@@ -1,6 +1,7 @@
-
+import { ConnectionProvider, WalletProvider } from '@solana/wallet-adapter-react'
 import * as web3 from '@solana/web3.js'
 import * as walletAdapterWallets from '@solana/wallet-adapter-wallets';
+import { WalletModalProvider } from "@solana/wallet-adapter-react-ui";
 require('@solana/wallet-adapter-react-ui/styles.css');
 
 const WalletContextProvider = ({ children }) => {
