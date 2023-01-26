@@ -17,11 +17,19 @@
         "@pushprotocol/restapi": "^0.2.1",
         "@pushprotocol/uiweb": "^0.2.3",
         "@reduxjs/toolkit": "^1.8.5",
+        "@solana/spl-token": "^0.2.0",
+        "@solana/wallet-adapter-base": "^0.9.5",
+        "@solana/wallet-adapter-react": "^0.15.4",
+        "@solana/wallet-adapter-react-ui": "^0.9.6",
+        "@solana/wallet-adapter-wallets": "^0.15.5",
         "@testing-library/jest-dom": "^5.16.5",
         "@testing-library/react": "^13.4.0",
         "@testing-library/user-event": "^14.4.3",
+        "@toruslabs/eccrypto": "^1.1.8",
         "apexcharts": "^3.35.5",
         "axios": "^1.2.0",
+        "crypto": "^1.0.1",
+        "crypto-browserify": "^3.12.0",
         "ethers": "^5.7.2",
         "formik": "^2.2.9",
         "framer-motion": "^7.3.6",
@@ -29,14 +37,16 @@
         "lodash": "^4.17.21",
         "multiselect-react-dropdown": "^2.0.25",
         "nft.storage": "^7.0.0",
+        "node-polyfill-webpack-plugin": "^2.0.1",
+        "patch-package": "^6.5.1",
         "prop-types": "^15.8.1",
-        "react": "^18.2.0",
+        "react": "18.0.0",
         "react-apexcharts": "^1.4.0",
         "react-copy-to-clipboard": "^5.1.0",
         "react-device-detect": "^2.2.2",
         "react-dnd": "^16.0.1",
         "react-dnd-html5-backend": "^16.0.1",
-        "react-dom": "^18.2.0",
+        "react-dom": "18.0.0",
         "react-draggable": "^4.4.5",
         "react-element-to-jsx-string": "^15.0.0",
         "react-number-format": "^4.9.4",
@@ -51,16 +61,22 @@
         "redux": "^4.2.0",
         "simplebar": "^5.3.8",
         "simplebar-react": "^2.4.1",
+        "stream-browserify": "^3.0.0",
         "styled-components": "^5.3.6",
         "typescript": "4.8.3",
         "web-vitals": "^3.0.2",
         "yup": "^0.32.11"
     },
+    "browser" : {
+        "crypto" : false,
+        "stream" : false
+    },
     "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",
-        "eject": "react-scripts eject"
+        "eject": "react-scripts eject",
+        "postinstall": "patch-package"
     },
     "eslintConfig": {
         "extends": [
@@ -96,6 +112,7 @@
         "eslint-plugin-import": "^2.26.0",
         "eslint-plugin-jsx-a11y": "6.6.1",
         "eslint-plugin-react": "^7.31.8",
-        "eslint-plugin-react-hooks": "4.6.0"
+        "eslint-plugin-react-hooks": "4.6.0",
+        "react-app-rewired": "^2.2.1"
     }
 }
