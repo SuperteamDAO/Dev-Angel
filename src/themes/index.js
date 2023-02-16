@@ -61,10 +61,26 @@ export default function ThemeCustomization({ children }) {
                             // background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);
                             // backgroundImage: "linear-gradient( 95.2deg, rgba(173,252,234,1) 26.8%, rgba(192,229,246,1) 64% )"
                         },
-                        '.wallet-adapter-button': {
+                        '.wallet-adapter-button-trigger': {
                             width: "180px",
-                            height: "38px",
-                            marginLeft: "10px"
+                            // height: "38px",
+                            // marginLeft: "10px",
+                            fontWeight: 400,
+                            backgroundColor: '#000',
+                            borderRadius: '10px',
+                            background: 'transparent',
+                            color: '#000',
+                            fontFamily: 'Avenir Next',
+                            boxShadow: '0 0 6px 0 rgba(157, 96, 212, 0.5)',
+                            border: 'solid 3px transparent',
+                            backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #78e4ff, #ff48fa)',
+                            backgroundOrigin: 'border-box',
+                            backgroundClip: 'content-box, border-box',
+                            boxShadow: '2px 1000px 1px #fff inset',
+                            '&:hover': {
+                                border: 'solid 3px transparent !important',
+                                boxShadow: '2px 1000px 1px transparent inset'
+                            }        
                         }
                     }}
                 />
